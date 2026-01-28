@@ -1,0 +1,199 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #2e2e2e;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-primary: var(--font-primary);
+  --font-secondary: var(--font-secondary);
+
+  /* Color Set */
+  --color-primary: #0b5ed7;
+  --color-gray-lightest: #f6f6f6;
+  --color-gray-lighter: #f1f1f1;
+  --color-gray-lighter2: #f2f2f2;
+  --color-gray-light: #d9d9d9;
+  --color-gray-medium: #c2c2c2;
+  --color-gray-neutral: #8e8e8e;
+  --color-gray: #636363;
+  --color-gray-darker: #616161;
+  --color-gray-darkest: #48494e;
+  --color-gray-dark: #2e2e2e;
+  --color-slate: #2f3042;
+  --color-black: #000000;
+  --color-white: #ffffff;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-primary), sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Pop-out Animation */
+@keyframes pop-out {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pop-out-bounce {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pop-out-fade {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Pop-out Classes */
+.pop-out {
+  animation: pop-out 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.pop-out-bounce {
+  opacity: 0;
+  transform: scale(0);
+  animation: pop-out-bounce 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.pop-out-fade {
+  animation: pop-out-fade 0.4s ease-out forwards;
+}
+
+.pop-out-slow {
+  animation: pop-out 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.pop-out-fast {
+  animation: pop-out 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes myPop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.myPop {
+  opacity: 0;
+  transform: scale(0);
+  /*animation: myPop 0.5s ease-in-out forwards;*/
+  animation: myPop 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+  /*animation-delay: 0.25s;*/
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Accessibility: Focus states */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Remove default outline only when focus-visible is supported */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.hero-cover {
+  background-image: url("/assets/hero-vector.svg");
+  /*background-size: 35dvh;*/
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+@media (min-width: 640px) {
+  .hero-cover {
+    background-size: 50dvh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-cover {
+    background-size: 65dvh;
+  }
+}
+
+@keyframes circum-shown-anim {
+  from {
+    transform: scale(90%);
+    opacity: 0;
+  }
+  to {
+    transform: scale(100%);
+    opacity: 1;
+  }
+}
+
+.circum-shown {
+  opacity: 0;
+  transform: scale(90%);
+  transition: 0.75s;
+  /**/
+  animation: circum-shown-anim 0.75s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s
+    forwards;
+}
+
+/**/

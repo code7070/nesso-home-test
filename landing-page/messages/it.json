@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "siteName": "Nesso Digitale Lab",
+    "title": "Nesso Digitale Lab | Agenzia Digitale & Studio Creativo",
+    "description": "Nesso Digitale Lab e un'agenzia digitale creativa specializzata in sviluppo web, UI/UX design e trasformazione digitale. Aiutiamo i brand a costruire esperienze digitali eccezionali.",
+    "keywords": "agenzia digitale, sviluppo web, UI/UX design, studio creativo, sviluppo software, trasformazione digitale, software personalizzato, team augmentation",
+    "ogTitle": "Nesso Digitale Lab | Agenzia Digitale & Studio Creativo",
+    "ogDescription": "Aiutiamo i brand a costruire esperienze digitali eccezionali attraverso lo sviluppo web, UI/UX design e trasformazione digitale.",
+    "ogImageAlt": "Nesso Digitale Lab - Agenzia Digitale Creativa"
+  },
+  "common": {
+    "welcome": "Benvenuto",
+    "loading": "Caricamento...",
+    "noImage": "Nessuna immagine"
+  },
+  "navigation": {
+    "home": "Home",
+    "service": "Servizi",
+    "sector": "Settori",
+    "workMethod": "Metodo di lavoro",
+    "whoUs": "Chi siamo",
+    "contact": "Contatti"
+  },
+  "cover": {
+    "bookConsultation": "Prenota una Consulenza",
+    "brandsTitle": "Brand che lavorano con noi"
+  },
+  "service": {
+    "title": "I nostri servizi",
+    "description": "Questi servizi sono progettati per aiutare i clienti a costruire e far crescere il proprio brand attraverso strategie creative e soluzioni digitali innovative.",
+    "items": {
+      "customProjects": {
+        "title": "Progetti su misura",
+        "description": "Progettiamo e sviluppiamo applicazioni web e gestionali personalizzate, costruite sulle reali esigenze del tuo business."
+      },
+      "teamOnDemand": {
+        "title": "Team on-demand",
+        "description": "Rafforza il tuo team con sviluppatori e DevOps esperti, pronti a integrarsi rapidamente nei tuoi processi."
+      }
+    }
+  },
+  "project": {
+    "title": "Progetti digitali di cui siamo orgogliosi",
+    "description": "Piattaforma e-commerce scalabile, progettata per offrire un'esperienza utente fluida e pagamenti sicuri."
+  },
+  "team": {
+    "title": "Nesso Digitale",
+    "briefs": {
+      "twoServices": {
+        "title": "Due servizi, un solo partner",
+        "description": "Sviluppiamo software su misura e forniamo sviluppatori e DevOps on-demand per rafforzare il tuo team."
+      },
+      "quality": {
+        "title": "Qualità da software house, flessibilità globale",
+        "description": "Un approccio ibrido che unisce standard da software house e una rete internazionale di talenti."
+      },
+      "focus": {
+        "title": "Focus totale sul tuo business",
+        "description": "Un referente locale e un team globale lavorano insieme per trasformare le esigenze in soluzioni."
+      }
+    }
+  },
+  "digital": {
+    "title": "La trasformazione digitale in azione",
+    "description": "Dai processi manuali a quelli automatizzati: esempi concreti di come aiutiamo i nostri clienti a semplificare il lavoro quotidiano, ridurre gli errori e ottenere risultati misurabili.",
+    "wordings": {
+      "integration": {
+        "title": "Integrazione sito web e CRM",
+        "description": "Sincronizzazione automatica dei lead e tempi di risposta ridotti da ore a pochi minuti."
+      },
+      "automation": {
+        "title": "Automazione dei report di vendita mensili",
+        "description": "Tempo di reporting ridotto del 70%, con un risparmio di circa 40 ore uomo al mese."
+      },
+      "software": {
+        "title": "Gestionale leggero su misura",
+        "description": "Processi centralizzati e attività amministrative quotidiane ridotte del 50%."
+      }
+    }
+  },
+  "articles": {
+    "title": "La trasformazione digitale, passo dopo passo",
+    "description": "Esempi pratici di automazione che semplificano le attività operative e migliorano le performance aziendali."
+  },
+  "footer": {
+    "tagline": "Costruiamo soluzioni digitali che semplificano il lavoro, un progetto alla volta.",
+    "menus": "Menu",
+    "contacts": "Contatti",
+    "address": "Modulo LTD, Golden Plaza, 7 Nile Street, Cairo EG2R 6DA",
+    "cta": {
+      "availability": "Attualmente disponibili per nuovi progetti",
+      "question": "Interessato a collaborare con noi?",
+      "description": "Aiutiamo aziende e team a progettare e sviluppare soluzioni digitali efficaci. Raccontaci il tuo progetto e scopriamo insieme come possiamo trasformare le tue idee in risultati concreti.",
+      "button": "Prenota una Consulenza"
+    }
+  },
+  "contactModal": {
+    "title": "Contattaci",
+    "description": "Compila il modulo qui sotto e ti risponderemo il prima possibile.",
+    "nameLabel": "Nome",
+    "namePlaceholder": "Il tuo nome completo",
+    "emailLabel": "Email",
+    "emailPlaceholder": "tua@email.com",
+    "messageLabel": "Messaggio",
+    "messagePlaceholder": "Raccontaci del tuo progetto...",
+    "submitButton": "Invia Messaggio",
+    "loadingTitle": "Invio del messaggio...",
+    "loadingDescription": "Attendi mentre elaboriamo la tua richiesta.",
+    "successTitle": "Messaggio inviato!",
+    "successDescription": "Grazie per averci contattato. Ti risponderemo entro 24 ore.",
+    "successButton": "Chiudi"
+  }
+}

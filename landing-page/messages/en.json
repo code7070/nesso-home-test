@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "siteName": "Nesso Digitale Lab",
+    "title": "Nesso Digitale Lab | Digital Agency & Creative Studio",
+    "description": "Nesso Digitale Lab is a creative digital agency specializing in web development, UI/UX design, and digital transformation. We help brands build exceptional digital experiences.",
+    "keywords": "digital agency, web development, UI/UX design, creative studio, software development, digital transformation, custom software, team augmentation",
+    "ogTitle": "Nesso Digitale Lab | Digital Agency & Creative Studio",
+    "ogDescription": "We help brands build exceptional digital experiences through web development, UI/UX design, and digital transformation.",
+    "ogImageAlt": "Nesso Digitale Lab - Creative Digital Agency"
+  },
+  "common": {
+    "welcome": "Welcome",
+    "loading": "Loading...",
+    "noImage": "No image"
+  },
+  "navigation": {
+    "home": "Home",
+    "service": "Services",
+    "sector": "Sectors",
+    "workMethod": "Work Method",
+    "whoUs": "About Us",
+    "contact": "Contact"
+  },
+  "cover": {
+    "bookConsultation": "Book a Consultation",
+    "brandsTitle": "Brands that work with us"
+  },
+  "service": {
+    "title": "Our services",
+    "description": "These services are designed to help clients build and grow their brand through creative strategies and innovative digital solutions.",
+    "items": {
+      "customProjects": {
+        "title": "Custom projects",
+        "description": "We design and develop custom web applications and management systems, built on the real needs of your business."
+      },
+      "teamOnDemand": {
+        "title": "Team on-demand",
+        "description": "Strengthen your team with expert developers and DevOps, ready to quickly integrate into your processes."
+      }
+    }
+  },
+  "project": {
+    "title": "Digital projects we are proud of",
+    "description": "Scalable e-commerce platform, designed to offer a smooth user experience and secure payments."
+  },
+  "team": {
+    "title": "Nesso Digitale",
+    "briefs": {
+      "twoServices": {
+        "title": "Two services, one partner",
+        "description": "We develop custom software and provide on-demand developers and DevOps to strengthen your team."
+      },
+      "quality": {
+        "title": "Software house quality, global flexibility",
+        "description": "A hybrid approach that combines software house standards and an international network of talent."
+      },
+      "focus": {
+        "title": "Total focus on your business",
+        "description": "A local contact and a global team work together to turn needs into solutions."
+      }
+    }
+  },
+  "digital": {
+    "title": "Digital transformation in action",
+    "description": "From manual to automated processes: concrete examples of how we help our clients simplify daily work, reduce errors and achieve measurable results.",
+    "wordings": {
+      "integration": {
+        "title": "Website and CRM integration",
+        "description": "Automatic lead synchronization and response times reduced from hours to minutes."
+      },
+      "automation": {
+        "title": "Automation of monthly sales reports",
+        "description": "Reporting time reduced by 70%, saving approximately 40 man-hours per month."
+      },
+      "software": {
+        "title": "Lightweight custom management system",
+        "description": "Centralized processes and daily administrative tasks reduced by 50%."
+      }
+    }
+  },
+  "articles": {
+    "title": "Digital transformation, step by step",
+    "description": "Practical examples of automation that simplify operational activities and improve business performance."
+  },
+  "footer": {
+    "tagline": "We build digital solutions that simplify work, one project at a time.",
+    "menus": "Menus",
+    "contacts": "Contacts",
+    "address": "Modulo LTD, Golden Plaza, 7 Nile Street, Cairo EG2R 6DA",
+    "cta": {
+      "availability": "Currently available for new projects",
+      "question": "Interested in collaborating with us?",
+      "description": "We help companies and teams design and develop effective digital solutions. Tell us about your project and let's discover together how we can turn your ideas into concrete results.",
+      "button": "Book a Consultation"
+    }
+  },
+  "contactModal": {
+    "title": "Get in touch",
+    "description": "Fill out the form below and we'll get back to you as soon as possible.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your full name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your@email.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell us about your project...",
+    "submitButton": "Send Message",
+    "loadingTitle": "Sending your message...",
+    "loadingDescription": "Please wait while we process your request.",
+    "successTitle": "Message sent!",
+    "successDescription": "Thank you for reaching out. We'll get back to you within 24 hours.",
+    "successButton": "Close"
+  }
+}
