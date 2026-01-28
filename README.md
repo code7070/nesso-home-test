@@ -75,7 +75,7 @@ Pixel-tight implementation from Figma:
 
 **URL:** `http://localhost:3000`
 
-**Locales:** `/en` (English), `/id` (Indonesian)
+**Locales:** `/en` (English), `/it` (Italia)
 
 ### 2. App-Like Job Board (React + Vite)
 
