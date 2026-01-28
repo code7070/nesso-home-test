@@ -40,17 +40,21 @@ export function SearchBar({
   };
 
   return (
-    <div className="relative">
+    <div className="relative" role="search">
       <div className="relative flex items-center">
         {/* Search Icon */}
-        <Search className="absolute left-3 h-4 w-4 text-muted-foreground pointer-events-none" />
+        <Search
+          className="absolute left-3 h-4 w-4 text-muted-foreground pointer-events-none"
+          aria-hidden="true"
+        />
 
         {/* Input Field */}
         <Input
-          type="text"
+          type="search"
           value={localValue}
           onChange={(e) => setLocalValue(e.target.value)}
           placeholder={placeholder}
+          aria-label="Search jobs"
           className="pl-10 pr-10 h-11 bg-card border-border focus-visible:ring-primary"
         />
 
@@ -60,9 +64,10 @@ export function SearchBar({
             variant="ghost"
             size="sm"
             onClick={handleClear}
+            aria-label="Clear search"
             className="absolute right-1 h-8 w-8 p-0 hover:bg-muted"
           >
-            <X className="h-4 w-4 text-muted-foreground" />
+            <X className="h-4 w-4 text-muted-foreground" aria-hidden="true" />
           </Button>
         )}
       </div>

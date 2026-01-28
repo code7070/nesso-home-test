@@ -93,7 +93,7 @@ describe("jobService", () => {
     });
 
     it("should filter by location type", async () => {
-      const filters = { ...baseFilters, locationType: ["remote"] as const };
+      const filters: JobFilters = { ...baseFilters, locationType: ["remote"] };
       const jobs = await jobService.searchJobs(filters, DEFAULT_SORT);
 
       expect(jobs.length).toBeGreaterThan(0);
@@ -103,7 +103,7 @@ describe("jobService", () => {
     });
 
     it("should filter by multiple location types", async () => {
-      const filters = { ...baseFilters, locationType: ["remote", "hybrid"] as const };
+      const filters: JobFilters = { ...baseFilters, locationType: ["remote", "hybrid"] };
       const jobs = await jobService.searchJobs(filters, DEFAULT_SORT);
 
       expect(jobs.length).toBeGreaterThan(0);
@@ -113,7 +113,7 @@ describe("jobService", () => {
     });
 
     it("should filter by job type", async () => {
-      const filters = { ...baseFilters, jobType: ["full-time"] as const };
+      const filters: JobFilters = { ...baseFilters, jobType: ["full-time"] };
       const jobs = await jobService.searchJobs(filters, DEFAULT_SORT);
 
       expect(jobs.length).toBeGreaterThan(0);
@@ -123,7 +123,7 @@ describe("jobService", () => {
     });
 
     it("should filter by experience level", async () => {
-      const filters = { ...baseFilters, experienceLevel: ["senior"] as const };
+      const filters: JobFilters = { ...baseFilters, experienceLevel: ["senior"] };
       const jobs = await jobService.searchJobs(filters, DEFAULT_SORT);
 
       expect(jobs.length).toBeGreaterThan(0);

@@ -5,6 +5,7 @@ import { Header } from "@/components/layout/Header";
 import { PageContainer } from "@/components/layout/PageContainer";
 import { JobList, JobDetail } from "@/components/job";
 import { ApplicationWizard } from "@/components/application";
+import { ScreenReaderAnnounce } from "@/components/ui/screen-reader-announce";
 import {
   SearchBar,
   FilterBar,
@@ -131,7 +132,7 @@ export function JobsPage() {
         </div>
 
         {/*WRAP*/}
-        <div className="sticky top-0">
+        <div className="sticky top-[65px] py-2 -mx-4 px-4 bg-background">
           {/* Search Bar */}
           <div className="mb-4">
             <SearchBar
@@ -192,6 +193,13 @@ export function JobsPage() {
               : "No jobs available at the moment."
           }
         />
+
+        {/* Screen reader announcement for job count changes */}
+        {!isLoading && (
+          <ScreenReaderAnnounce
+            message={`${jobs.length} ${jobs.length === 1 ? "job" : "jobs"} found`}
+          />
+        )}
       </PageContainer>
 
       {/* Job Detail Modal */}

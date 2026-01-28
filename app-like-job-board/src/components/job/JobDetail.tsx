@@ -95,6 +95,8 @@ export function JobDetail({
                 variant="ghost"
                 size="sm"
                 onClick={handleBookmarkClick}
+                aria-label={isBookmarked ? "Remove from saved jobs" : "Save job"}
+                aria-pressed={isBookmarked}
                 className="flex-shrink-0 h-9 w-9 p-0 mr-6"
               >
                 <Bookmark
@@ -251,6 +253,8 @@ export function JobDetail({
             variant="outline"
             size="lg"
             onClick={handleBookmarkClick}
+            aria-label={isBookmarked ? "Remove from saved jobs" : "Save job"}
+            aria-pressed={isBookmarked}
             className="gap-2"
           >
             <Bookmark

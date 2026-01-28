@@ -139,7 +139,7 @@ export function FilterCombobox({
         <ComboboxInput
           placeholder="Search filters..."
           value={searchValue}
-          onValueChange={setSearchValue}
+          onChange={(e) => setSearchValue(e.target.value)}
         />
         <ComboboxList>
           <ComboboxEmpty>No filters found</ComboboxEmpty>

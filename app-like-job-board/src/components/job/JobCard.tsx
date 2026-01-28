@@ -36,14 +36,28 @@ export function JobCard({
     onClick?.(job);
   };
 
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      onClick?.(job);
+    }
+  };
+
   // Show max 3 tags, rest as "+X more"
   const visibleTags = job.tags.slice(0, 3);
   const remainingTags = job.tags.length - 3;
 
+  // Generate unique ID for aria-labelledby
+  const titleId = `job-title-${job.id}`;
+
   return (
     <Card
-      className="bg-card border border-border shadow-sm hover:shadow-md transition-shadow cursor-pointer rounded-none hover:border-primary hover:shadow-primary"
+      role="article"
+      tabIndex={0}
+      aria-labelledby={titleId}
+      className="bg-card border border-border shadow-sm hover:shadow-md transition-shadow cursor-pointer rounded-none hover:border-primary hover:shadow-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
       onClick={handleCardClick}
+      onKeyDown={handleKeyDown}
     >
       <div className="px-6 space-y-4">
         {/* Header: Company Logo + Name + Bookmark */}
@@ -69,7 +83,10 @@ export function JobCard({
               <h3 className="text-sm font-medium text-muted-foreground truncate">
                 {job.company}
               </h3>
-              <h2 className="text-base font-semibold text-card-foreground line-clamp-2 mt-0.5">
+              <h2
+                id={titleId}
+                className="text-base font-semibold text-card-foreground line-clamp-2 mt-0.5"
+              >
                 {job.title}
               </h2>
             </div>
@@ -81,6 +98,9 @@ export function JobCard({
               variant="ghost"
               size="sm"
               onClick={handleBookmarkClick}
+              onKeyDown={(e) => e.stopPropagation()}
+              aria-label={isBookmarked ? "Remove from saved jobs" : "Save job"}
+              aria-pressed={isBookmarked}
               className="flex-shrink-0 h-8 w-8 p-0"
             >
               <Bookmark
